@@ -3,7 +3,7 @@
     <parent>
         <artifactId>sfg-pet-clinic</artifactId>
         <groupId>com.saladinjava</groupId>
-        <version>2</version>
+        <version>3-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
