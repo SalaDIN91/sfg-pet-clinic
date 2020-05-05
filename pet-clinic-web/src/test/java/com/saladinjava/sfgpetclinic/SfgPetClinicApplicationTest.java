@@ -1,10 +1,10 @@
 package com.saladinjava.sfgpetclinic;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SfgPetClinicApplicationTests {
+class SfgPetClinicApplicationTest {
 
     @Test
     void contextLoads() {
