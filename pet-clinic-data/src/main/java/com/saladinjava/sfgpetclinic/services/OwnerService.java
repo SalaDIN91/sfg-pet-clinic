@@ -2,15 +2,9 @@ package com.saladinjava.sfgpetclinic.services;
 
 import com.saladinjava.sfgpetclinic.model.Owner;
 
-import java.util.Set;
 
-public interface OwnerService {
+public interface OwnerService extends CrudService<Owner, Long>{
 
     Owner findByLastName(String lastName);
 
-    Owner findById(Long id);
-
-    Owner save(Owner owner);
-
-    Set<Owner> findAll();
 }
