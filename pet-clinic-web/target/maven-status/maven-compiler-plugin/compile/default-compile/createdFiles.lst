@@ -1,1 +1,5 @@
+com\saladinjava\sfgpetclinic\controllers\OwnerController.class
+com\saladinjava\sfgpetclinic\controllers\IndexController.class
+com\saladinjava\sfgpetclinic\controllers\VetController.class
+com\saladinjava\sfgpetclinic\bootstrap\DataLoader.class
 com\saladinjava\sfgpetclinic\SfgPetClinicApplication.class

@@ -1,5 +1,14 @@
+com\saladinjava\sfgpetclinic\services\PetService.class
+com\saladinjava\sfgpetclinic\services\CrudService.class
 com\saladinjava\sfgpetclinic\model\Vet.class
+com\saladinjava\sfgpetclinic\services\map\PetServiceMap.class
 com\saladinjava\sfgpetclinic\model\Person.class
-com\saladinjava\sfgpetclinic\model\Pet.class
-com\saladinjava\sfgpetclinic\model\PetType.class
 com\saladinjava\sfgpetclinic\model\Owner.class
+com\saladinjava\sfgpetclinic\services\map\OwnerServiceMap.class
+com\saladinjava\sfgpetclinic\services\VetService.class
+com\saladinjava\sfgpetclinic\services\map\VetServiceMap.class
+com\saladinjava\sfgpetclinic\services\OwnerService.class
+com\saladinjava\sfgpetclinic\model\Pet.class
+com\saladinjava\sfgpetclinic\services\map\AbstractMapService.class
+com\saladinjava\sfgpetclinic\model\BaseEntity.class
+com\saladinjava\sfgpetclinic\model\PetType.class
