@@ -1,11 +1,12 @@
 package com.saladinjava.sfgpetclinic.model;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.Set;
 
 public class Owner extends Person {
 
-    private Set<Pet> pets;
+    private Set<Pet> pets = new HashSet<>();
     private LocalDate birthDate;
     private String address;
     private String city;
