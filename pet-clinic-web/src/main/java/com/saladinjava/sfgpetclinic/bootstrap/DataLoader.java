@@ -1,10 +1,7 @@
 package com.saladinjava.sfgpetclinic.bootstrap;
 
 import com.saladinjava.sfgpetclinic.model.*;
-import com.saladinjava.sfgpetclinic.services.OwnerService;
-import com.saladinjava.sfgpetclinic.services.PetTypeService;
-import com.saladinjava.sfgpetclinic.services.SpecialtyService;
-import com.saladinjava.sfgpetclinic.services.VetService;
+import com.saladinjava.sfgpetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,14 +14,16 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialtyService specialtyService;
+    private final VisitService visitService;
 
-
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService, SpecialtyService specialtyService1) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
-        this.specialtyService = specialtyService1;
+        this.specialtyService = specialtyService;
+        this.visitService = visitService;
     }
+
 
     @Override
     public void run(String... args) throws Exception {
@@ -74,6 +73,13 @@ public class DataLoader implements CommandLineRunner {
         owner1.getPets().add(fionasPet);
 
         ownerService.save(owner1);
+
+        Visit dogVisit = new Visit();
+        dogVisit.setPet(fionasPet);
+        dogVisit.setDate(LocalDate.now());
+        dogVisit.setDescription("Paw pain");
+
+        visitService.save(dogVisit);
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Mark");
