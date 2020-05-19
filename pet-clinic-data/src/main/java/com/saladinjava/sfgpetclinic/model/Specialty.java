@@ -1,6 +1,14 @@
 package com.saladinjava.sfgpetclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "specilaties")
 public class Specialty extends BaseEntity{
+
+    @Column(name = "description")
     private String description;
 
     public String getDescription() {
