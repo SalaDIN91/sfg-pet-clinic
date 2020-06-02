@@ -135,7 +135,7 @@
                         <groupId>org.junit.platform</groupId>
                         <artifactId>junit-platform-surefire-provider</artifactId>
                         <version>1.3.2</version>
-                        <scope>system</scope>
+                        <scope>test</scope>
                     </dependency>
                 </dependencies>
             </plugin>
