@@ -80,7 +80,7 @@
                     <dependency>
                         <groupId>org.junit.platform</groupId>
                         <artifactId>junit-platform-surefire-provider</artifactId>
-                        <version>${junit-platform.vesion}</version>
+                        <version>1.3.2</version>
                         <scope>test</scope>
                     </dependency>
                 </dependencies>
